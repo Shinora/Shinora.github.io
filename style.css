@@ -4,8 +4,9 @@ background-color: #D7EEFF;
 
 };
 
-header{
-background-position: top;
-background-color: #FFDFD3;
-background-size: contain;
-};
+
+div.menu{
+    background-color: #FFDFD3;
+    width: 50px;
+
+}
