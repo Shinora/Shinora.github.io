@@ -1,12 +1,18 @@
 
 body{
-background-color: #D7EEFF;
+background-color: orange;
 
 };
 
 
 div.menu{
-    background-color: #FFDFD3;
+    background-color: brown;
     width: 50px;
 
+}
+
+p{
+
+font-family: Helvetica;
+font-color: black;
 }
