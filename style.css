@@ -1,0 +1,18 @@
+
+body{
+background-color: orange;
+
+};
+
+
+div.menu{
+    background-color: brown;
+    width: 50px;
+
+}
+
+p{
+
+font-family: Helvetica;
+font-color: black;
+}
