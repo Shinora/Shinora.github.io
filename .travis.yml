@@ -24,6 +24,14 @@ cache: bundler # caching bundler gem packages will speed up build
 
 # Optional: disable email notifications about the outcome of your builds
 notifications:
-  email: true
+  email: false
 
 exclude: [vendor]
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $Github_token  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: maste
