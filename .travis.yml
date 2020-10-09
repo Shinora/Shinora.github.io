@@ -14,6 +14,8 @@ branches:
   only:
   - gh-pages     # test the gh-pages branch
   - /pages-(.*)/ # test every branch which starts with "pages-"
+install:
+  -bundle install
 
 addons:
   apt:
@@ -34,4 +36,4 @@ deploy:
   github_token: $Github_token  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
-    branch: maste
+    branch: master
