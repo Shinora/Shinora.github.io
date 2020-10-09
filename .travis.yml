@@ -30,8 +30,10 @@ exclude: [vendor]
 
 deploy:
   provider: pages
+  tags: true
   skip_cleanup: true
   github_token: $Github_token  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
+    all_branches: true
     branch: master
