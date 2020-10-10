@@ -4,7 +4,6 @@ echo " starting script ..."
 DEPLOY_REPO="https://${Github_token}@github.com/Shinora/Shinora.github.io.git"
 
 function main {
-  bundle exec htmlproofer ./_site
 	clean
 	get_current_site
 	build_site
