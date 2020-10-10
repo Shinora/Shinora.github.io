@@ -1,37 +1,27 @@
 language: ruby
 rvm:
-  - 2.6.3
-
+- 2.6.3
 before_script:
- - chmod +x ./script/cibuild # or do this locally and commit
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script: ./script/cibuild
-
-# branch whitelist, only for GitHub Pages
+- chmod +x ./script/cibuild
+script: "./script/cibuild"
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
-
+  - gh-pages
+  - "/pages-(.*)/"
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-
-cache: bundler # caching bundler gem packages will speed up build
-
-# Optional: disable email notifications about the outcome of your builds
+cache: bundler
 notifications:
   email: false
-
 deploy:
   provider: pages
-  tags: true
   skip_cleanup: true
-  github_token: rU/7YJV59gcFbwcs+I0w3gJv58B0+b2Tw3LVRiJnsshfl3HenLFqR+n8sWa2qOfTw8iBq0ee2YdHJCsiZc4MlI69jxhTHEsJzVYx/SYhGXiQUO/amAMNmBtFjhAZo8S0R6CCTYuMf+FWxsKmA2RPdsHmM9eUIbiwC0ZHyyECHb+S7CVSwMlVW55YVRIStIsL/0/XagALjy7TWfmEYUzw0dKaqH6wll/8nX7GTwcZ1smx3LgdJcQoJ4xhUhQdKCCiisDuvvgS6/+4X2HTGnEqw6/rq3vifE/GrDpW/stMj1EiYx/hvsTP/I3eHX6h92ugb2JZ+t7u1m63g0VZEKJ4VCdhhErq/9EYwl9np2HvURx2U058oqQzothxoboYcCSSUS9yzyU8E7SXBnTLht+tCKyCE41o722t4fDdLQuaWym/OEQTsz6zDmPzUSBdy/JczwFFk2MKqEoxuPTjggRhj/Lf6AiQABnDZau/qw39DddxnKplJUM5gjWgDZEChQKr0iHo8iR0WHr5/HtY6wYxLkcjUrY4SUGe6zzL6i/KJDVDAGP7uOetBZDRpKDfFfwaVM+SBsjC0kpqt9vMUOy7+Cyd4XJjBsaR++nitH4H4LgR+tHmGAYUgQO2Hj9uzpSkiAIq+ZBFBAT+VFStohSxRRAzqvBGKbyz3V4obN8LMI0=
-  keep_history: true
-  true:
+
+  on:
+    tags: true
     all_branches: true
-    branch: master
+env:
+  global:
+  - secure: idzr7NiKqNK/Ih345e6biQ2QfkVpX2kqoFNbSsyyEFlFOrdh1yzARJsfpzMG3gdXNOzGp4E4rDdwrV/hBQB9Xd70uLcV4ZiyW3UwhxoBBdPFMswVZV8vDuMzl28ZjkF7QEY99nTMUvx5c8PbadhQFE9s+0rkTfW2BIQh4knKTD6IsLdWr2w38p6lyQUvIplobgycC+HwuvttF8nNWo/tRV9N9dnKvqm4yUKG79dE8ztMXQfbDnx25BBQvilt+Ep8DidLhv4NtuilHH2zh78w8PPHjaPyifi7VeMnoYUM+vOGRE9+HDc+bV2Re2fi5U08dgetuS+ag2tx0xC4edkPqOAzbPo6cnWJQ1GIe+psza0CI7AexTan3qJUTUDkVf4BADXcYkeVG8+GK/LqeKRNmiIID0U/F34ys0OaC/yaeaoRcmti2N3Jc5o55YPY143nXGvj4c4J/I2O3mzcTfrANzffS+VG3AyMG3nHY7/niJhMmYElMgMrqj4KZwn9AKcUnk8mt7xG6ezX62eQ14iPihYxy6QIUG0eeX3P6hfcbuX/7ULjB8aomDjQpGORiihRs/cIGVbtR+thhzh22RyYQku9C5/Av8rsq/XPUmzyLJs3khVmbYV4yc/EC9QIb5MYpY9Oys4Vw4tsL3tcCrxYX1P6Jh3B7s2Fnw4elfRcWB4=
