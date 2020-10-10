@@ -21,4 +21,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     repo: Shinora/Shinora.github.io
-    branch: master
+    all_branches: true
