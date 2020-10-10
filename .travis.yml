@@ -7,8 +7,8 @@ install:
   - bundle install
 
 before_script:
-- chmod +x ./script/setup
-script: "./script/setup"
+- chmod +x ./setup
+script: "./setup"
 branches:
   only:
   - gh-pages
