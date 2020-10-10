@@ -26,8 +26,6 @@ cache: bundler # caching bundler gem packages will speed up build
 notifications:
   email: false
 
-exclude: [vendor]
-
 deploy:
   provider: pages
   tags: true

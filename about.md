@@ -5,4 +5,4 @@ title: About
 
 Here are some crazy infos about me :
 
-''' Note : This is still in edition '' 
+''' Note : This is still in edition '''
