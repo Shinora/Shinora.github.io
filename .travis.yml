@@ -18,7 +18,7 @@ notifications:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: $Github_token
   on:
     repo: Shinora/Shinora.github.io
     all_branches: true
