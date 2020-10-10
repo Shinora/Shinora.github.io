@@ -18,9 +18,7 @@ notifications:
 deploy:
   provider: pages
   skip_cleanup: true
-  api_key:
-    secure: idzr7NiKqNK/Ih345e6biQ2QfkVpX2kqoFNbSsyyEFlFOrdh1yzARJsfpzMG3gdXNOzGp4E4rDdwrV/hBQB9Xd70uLcV4ZiyW3UwhxoBBdPFMswVZV8vDuMzl28ZjkF7QEY99nTMUvx5c8PbadhQFE9s+0rkTfW2BIQh4knKTD6IsLdWr2w38p6lyQUvIplobgycC+HwuvttF8nNWo/tRV9N9dnKvqm4yUKG79dE8ztMXQfbDnx25BBQvilt+Ep8DidLhv4NtuilHH2zh78w8PPHjaPyifi7VeMnoYUM+vOGRE9+HDc+bV2Re2fi5U08dgetuS+ag2tx0xC4edkPqOAzbPo6cnWJQ1GIe+psza0CI7AexTan3qJUTUDkVf4BADXcYkeVG8+GK/LqeKRNmiIID0U/F34ys0OaC/yaeaoRcmti2N3Jc5o55YPY143nXGvj4c4J/I2O3mzcTfrANzffS+VG3AyMG3nHY7/niJhMmYElMgMrqj4KZwn9AKcUnk8mt7xG6ezX62eQ14iPihYxy6QIUG0eeX3P6hfcbuX/7ULjB8aomDjQpGORiihRs/cIGVbtR+thhzh22RyYQku9C5/Av8rsq/XPUmzyLJs3khVmbYV4yc/EC9QIb5MYpY9Oys4Vw4tsL3tcCrxYX1P6Jh3B7s2Fnw4elfRcWB4=
+  github_token: $GITHUB_TOKEN
   on:
     repo: Shinora/Shinora.github.io
-    tags: false
-    all_branches: true
+    branch: master
