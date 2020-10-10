@@ -1,23 +1,22 @@
 language: ruby
 rvm:
 - 2.6.3
+
+before_install: gem update bundler
+install:
+  - bundle install
+
 before_script:
 - chmod +x ./script/cibuild
 script: "./script/cibuild"
 branches:
   only:
-  - master
+  - build
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
+
 cache: bundler
 notifications:
   email: false
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $Github_token
-  on:
-    repo: Shinora/Shinora.github.io
-    all_branches: true
