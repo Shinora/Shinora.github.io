@@ -6,8 +6,7 @@ before_script:
 script: "./script/cibuild"
 branches:
   only:
-  - gh-pages
-  - "/pages-(.*)/"
+  -master
 addons:
   apt:
     packages:
@@ -22,4 +21,4 @@ deploy:
   on:
     repo: Shinora/Shinora.github.io
     all_branches: true
-    branch: master
+    
