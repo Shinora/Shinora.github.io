@@ -7,8 +7,8 @@ install:
   - bundle install
 
 before_script:
-- chmod +x ./script/cibuild
-script: "./script/cibuild"
+- chmod +x ./script/setup
+script: "./script/setup"
 branches:
   only:
   - gh-pages
