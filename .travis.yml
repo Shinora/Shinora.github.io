@@ -12,7 +12,7 @@ script: "./setup"
 branches:
   only:
   - build
-  
+
 addons:
   apt:
     packages:
