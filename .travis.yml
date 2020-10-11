@@ -11,8 +11,7 @@ before_script:
 script: "./setup"
 branches:
   only:
-  - build
-  - gh-pages
+  - master
 
 addons:
   apt:
