@@ -20,4 +20,4 @@ addons:
 
 cache: bundler
 notifications:
-  email: false
+  email: true
