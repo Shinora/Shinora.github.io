@@ -1,14 +1,14 @@
 
 
 
-<header class="header">
-  <nav>
+<div class="header">
+  <div class="navigation">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %} style="color: red;"{% endif %}>
+      <a href="{{ item.link }}">
         {{ item.name }}
       </a>
     {% endfor %}
-  </nav>
+  </div>
 <ul class="social-links">
 
 <a href="mailto:shuiza0.0@gmail.com" class="social-links__entry" target="_blank">
@@ -25,4 +25,4 @@
 </a>
 
 </ul>
-</header>
+</div>
