@@ -15,7 +15,7 @@ OK i figured after that i had to buy a st-link : sure, done thing. And now i hav
 
 I am still stuck with this, my wireing seems fine, tried the two jumper modes on the controller. 
 
-![Enough]](/assets/gifs/tired.gif)
+![Enough](/assets/gifs/tired.gif)
 
 So yeah maybe that was too much for a start, i will stuck a little bit with arduino, coding in C and getting rid of arduino IDE. Maybe try to resolve that issue with my bluepill or buy a nucleo with st-link in it : it is more reliable and the documentation will be way much better. 
 Anyway ill try to post some updates about the arduino and embedded progress. 
